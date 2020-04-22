@@ -1,0 +1,27 @@
+create an empty folder 
+create a folder named jni
+in the jni folder put your source files
+in the jni folder create an Android.mk
+in the Android.mk file add the following:
+
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE    := levitator		<-output file name
+LOCAL_SRC_FILES := levitator.c		<-file with main 
+
+include $(BUILD_EXECUTABLE)
+
+
+export PATH=$PATH:/home/udev/mydroid/ndk/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/
+
+/home/udev/mydroid/ndk/ndk-build 
+
+export ANDROID_ROOT=/home/udev/mydroid
+
+udev@ubuntu:~/android-sdk-linux_86/platform-tools/locals/openconnect/jni$ ./configure --host=arm-eabi CC=arm-eabi-gcc CPPFLAGS="-I$ANDROID_ROOT/build/platforms/android-3/arch-arm/usr/include/" CFLAGS="-nostdlib" LDFLAGS="-Wl,-rpath-link=$ANDROID_ROOT/build/platforms/android-3/arch-arm/usr/lib/ -L$ANDROID_ROOT/build/platforms/android-3/arch-arm/usr/lib"
+
+
+
+

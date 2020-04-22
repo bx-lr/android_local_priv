@@ -1,0 +1,40 @@
+Description of the various stuff in locals/
+
+revshell 	   - simple shell script that writes another shell script to /system/etc/install-recovery.sh and writes the  file "revshell" to /system/etc/revshell  (should be used with backdoor)
+
+backdoor	   - simple binary that implements a reverse shell to the ip and port specified on the command line
+
+hydra		   - Framework for running the following Android local priv exploits
+
+mempodroid	   - Android 4.0 - 4.0.3 Linux Kernel = 2.6.39 /proc/<pid>/mem arbitrary write (CVE-2012-0056)
+
+levitator	   - Android < 2.3.6 PowerVR SGX Privilege Escalation Exploit (CVE-2011-1350 & CVE-2011-1352)
+
+exploid		   - Android < 2.3 /proc/sys/kernel/hotplug symlink bug 
+
+psneuter	   - Android < 2.2 adbd ANDROID_PROPERTY_WORKSPACE ro.secure -r
+
+full_nelson	   - Linux Kernel <= 2.6.37 (CVE-2010-4258 & CVE-2010-3849 & CVE-2010-3850) arbitrary kernel NULL write
+
+RageAgainstTheCage - Android < 2.3 adbd RLIMIT_NPROC limit (adbd respawn cant drop root privs b/c process limit reached)
+
+GingerBreak2	   - Android 2.2 - 3.0 vold out of bounds array write
+
+zerg		   - Android 2.2 - 2.3 libsysutils use-after-free
+
+
+test on emulator:
+exploid		android 2.2 (maybe 2.1)
+mempodroid	android 4.0
+wunderbar	android 2.1 http://www.exploit-db.com/exploits/9477/
+zergrush	android 2.2 or 2.3
+zimperlich	android 2.2 http://c-skills.blogspot.com/2011/02/zimperlich-sources.html
+
+
+
+droid razr	4.0.4
+galaxy nexus	4.0.4
+motorola photon 2.3.4
+nexus one	2.3.3
+sprint epic	2.2.1
+motorola droid	2.0.1

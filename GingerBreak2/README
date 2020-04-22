@@ -1,0 +1,65 @@
+The Android Exploid Crew
+========================
+
+Brings you last time in history, in the April of 2011,
+since already disbanded:
+
+
+Android 2.2-3.0 softbreaks
+--------------------------
+
+As always:
+
+<ATTENTION>
+
+This code is under the GPL.
+It comes with absolutely NO WARRANTY, and you cant blame
+me for any damage it may cause.
+
+This program may make your device completely unusable and broken.
+You may loose all your data and warranty of the device!
+
+The program is intended for educational and demonstration
+purposes only.
+
+Before using the softbreak, remove your SD card or any removable
+media, or insert an empty one. Gingerbreak is going to exploit
+the volume manager so if you have bad luck it might be that
+it is erasing data while being executed.
+
+</ATTENTION>
+
+
+If you like what we are doing you can send us PayPal money to
+7-4-3-C@web.de so we can compensate time, effort and HW costs.
+But you are not forced to do so.
+
+The binary has to be uploaded to the device via "adb push"
+inside a writable and executable directory:
+
+/data/local/tmp
+
+After executing, it is self-explaining. After seeing '#' you
+are root. The jailbreaking has actually been done then,
+no matter what other tutorials tell you! You might want
+to install your Superuser.apk then in order to enable
+tethering etc. You can use one of the many instructions found
+on the web to do so.
+
+This softbreak is exploiting an out of bounds array access. The
+nature of these bugs make such exploits way more unstable than
+logic flaws as used by RageAgainstTheCage. So its likely that
+Gingerbreak is not running on as many devices as RageAgainstTheCage
+without adjusting offsets or indexes. The Jailbreaker cannot
+always live in Maryland and give sweet candy to everyone!
+
+Please NOTE:
+
+The softbreak is designed to be only executable by the legit
+owner of the device, as it needs adb-shell access.
+However, the vulnerability inside vold which is used to obtain
+root privileges might be exploited by malware from inside an APK
+as well. That means, kick your carrier in the ass in order to get
+updates if you dont want this hole staying open for yourself.
+
+
